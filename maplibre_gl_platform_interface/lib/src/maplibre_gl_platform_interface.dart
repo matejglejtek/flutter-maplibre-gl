@@ -202,6 +202,8 @@ abstract class MapLibrePlatform {
 
   Future<void> setLayerVisibility(String layerId, bool visible);
 
+  Future<void> triggerGeolocationControl();
+
   @mustCallSuper
   void dispose() {
     // clear all callbacks to avoid cyclic refs

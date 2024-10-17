@@ -829,4 +829,7 @@ class MapLibreMethodChannel extends MapLibrePlatform {
       return Future.error(e);
     }
   }
+
+  @override
+  Future<void> triggerGeolocationControl() async {}
 }
